@@ -36,7 +36,7 @@ your API should look for.
 
 ```ruby
 # config/initializers/rocket_shorts.rb
-require 'rocket\_shorts'
+require 'rocket_shorts'
 
 RocketShorts.header_format = /application\/vnd\.yourcompany\.v/
 ```
