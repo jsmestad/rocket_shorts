@@ -15,8 +15,13 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = RocketShorts::VERSION
 
+  if File.exists?('UPGRADING')
+    s.post_install_message = File.read("UPGRADING")
+  end
+
   gem.add_dependency 'rocket_pants', '~> 1.5.3'
 
+  gem.add_development_dependency 'appraisal'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rspec-rails'
   gem.add_development_dependency 'yard'
