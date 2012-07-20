@@ -11,7 +11,7 @@ There are a few differentiators: (neither is the 'right way', its personal prefe
 1. Version control is done through the `Accept` HTTP Header instead of a `:version` parameter.
 2. Support for a default version. Making HTTP testing possible for a single version.
 3. Pagination should use the `link` HTTP Header and not the content body.
-4. Clean up the payload body to avoid nesting under a `resource` key.
+4. Clean up the payload body to avoid nesting under a `response` JSON key.
 
 ## Installation
 
