@@ -1,6 +1,6 @@
 # RocketShorts
 
-This is an extension or set of overrides that sit on top of [RocketPants](https://github.com/filtersquad/rocket_pants). This is not an elegant extension by any means, but rather a set of modules that leverage the RocketPants load order to monkey-patch functionality.
+This is an extension or set of overrides that sits on top of [RocketPants](https://github.com/filtersquad/rocket_pants). This is not an elegant extension by any means, but rather a set of modules that leverage the RocketPants load order to monkey-patch functionality.
 
 ## Why RocketShorts over RocketPants?
 
