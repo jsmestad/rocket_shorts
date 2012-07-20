@@ -7,13 +7,11 @@ module RocketShorts
     end
 
     def matches?(req)
-      puts 'yoyoyo'
-      req.headers['Accept'].match(/#{RocketShorts.header_format}#{@versions}/)
-      # if @versions.present?
-        # @default ||
-      # else
-        # @default || req.headers['Accept'].match(/#{RocketShorts.header_format}#{@version}/)
-      # end
+      if @versions.present?
+        @default || req.headers['Accept'].match(/#{RocketShorts.header_format}#{@versions}/)
+      else
+        @default || req.headers['Accept'].match(/#{RocketShorts.header_format}#{@version}/)
+      end
     end
   end
 end
